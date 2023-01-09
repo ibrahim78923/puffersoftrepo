@@ -100,7 +100,4 @@ spec:
                 name:  appsvc
                 port:
                   number: 80
-  tls:
-  - hosts:
-    - www.dreggystore.com
-    secretName: myingress-key
+
