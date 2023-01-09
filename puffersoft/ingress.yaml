@@ -7,7 +7,6 @@ metadata:
     cert-manager.io/cluster-issuer: letsencrypt-staging
 spec:
   ingressClassName: traefik
-spec:
   tls:
   - hosts:
     - nginx.example.com
