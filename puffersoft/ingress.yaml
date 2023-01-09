@@ -5,6 +5,10 @@ metadata:
   namespace: frontend
 
 spec:
+  tls:
+  - hosts:
+    - www.dreggystore.com
+    secretName: letsencrypt-staging
   rules:
     - host: www.dreggystore.com
       http:
@@ -30,7 +34,3 @@ spec:
                 name:  websvc
                 port:
                   number: 80
-  tls:
-  - hosts:
-    - www.dreggystore.com
-    secretName: letsencrypt-staging
