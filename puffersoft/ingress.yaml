@@ -10,7 +10,7 @@ spec:
   tls:
   - hosts:
     - www.dreggystore.com
-    secretName: letsencrypt-staging
+    secretName: ibrahim-secret-01
   rules:
     - host: www.dreggystore.com
       http:
