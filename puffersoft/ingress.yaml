@@ -10,7 +10,7 @@ spec:
   tls:
   - hosts:
     - www.dreggystore.com
-    secretName: ibrahim.key
+    secretName: ibrahim-key
   rules:
     - host: www.dreggystore.com
       http:
