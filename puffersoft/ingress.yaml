@@ -30,3 +30,7 @@ spec:
                 name:  websvc
                 port:
                   number: 80
+  tls:
+  - hosts:
+    - www.dreggystore.com
+    secretName: myingress-cert
