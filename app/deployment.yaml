@@ -5,6 +5,7 @@ metadata:
   labels:
     app: app
   name: app
+  namespace: frontend
 spec:
   replicas: 1
   selector:
@@ -22,4 +23,3 @@ spec:
         name: nginx
         resources: {}
 status: {}
-
