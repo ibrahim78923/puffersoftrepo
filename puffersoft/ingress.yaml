@@ -9,7 +9,7 @@ spec:
   ingressClassName: traefik
   tls:
   - hosts:
-    - nginx.example.com
+    - www.dreggystore.com
     secretName: letsencrypt-staging
   rules:
     - host: www.dreggystore.com
