@@ -3,8 +3,8 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: app
-  name: appsvc
+    app: web
+  name: websvc
   namespace: frontend
 spec:
   ports:
@@ -12,6 +12,6 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
-    app: app
+    app: web
 status:
   loadBalancer: {}
