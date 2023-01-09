@@ -3,20 +3,20 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: app
-  name: app
+    app: web
+  name: web
   namespace: frontend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: app
+      app: web
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: app
+        app: web
     spec:
       containers:
       - image: nginx
