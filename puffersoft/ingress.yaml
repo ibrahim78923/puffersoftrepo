@@ -33,4 +33,4 @@ spec:
   tls:
   - hosts:
     - www.dreggystore.com
-    secretName: example-issuer-account-key
+    secretName: secret-1
