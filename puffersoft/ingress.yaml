@@ -33,4 +33,4 @@ spec:
   tls:
   - hosts:
     - www.dreggystore.com
-    secretName: myingress-cert
+    secretName: example-issuer-account-key
