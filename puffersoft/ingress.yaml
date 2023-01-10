@@ -7,6 +7,11 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
+spec:
+  tls:
+  - hosts:
+    - www.dreggystore.com
+    secretName: mysecret
   rules:
     - host: www.dreggystore.com
       http:
