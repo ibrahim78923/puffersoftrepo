@@ -8,10 +8,6 @@ metadata:
     cert-manager.io/cluster-issuer: letsencrypt-staging
 spec:
   ingressClassName: nginx
-  tls:
-  - hosts:
-    - www.dreggystore.com
-    secretName: letsencrypt-staging
   rules:
     - host: www.dreggystore.com
       http:
