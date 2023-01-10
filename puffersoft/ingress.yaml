@@ -5,13 +5,18 @@ metadata:
   namespace: frontend
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
+    cert-manager.io/issuer: "letsencrypt-staging"
 spec:
   ingressClassName: nginx
+  tls:
+  - hosts:
+    - www.dreggystore.com
+    secretName: example-tls
   rules:
     - host: www.dreggystore.com
       http:
         paths:
-          - path: /puffersoft
+          - path: /
             pathType: Prefix
             backend:
               service:
@@ -25,7 +30,7 @@ spec:
                 name:  websvc
                 port:
                   number: 80
-          - path: /
+          - path: /puffersoft
             pathType: Prefix
             backend:
               service:
