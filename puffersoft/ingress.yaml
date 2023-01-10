@@ -11,7 +11,7 @@ spec:
   tls:
   - hosts:
     - www.dreggystore.com
-    secretName: secret-1
+    secretName: letsencrypt-staging
   rules:
     - host: www.dreggystore.com
       http:
