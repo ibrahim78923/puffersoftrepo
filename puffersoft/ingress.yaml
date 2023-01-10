@@ -11,7 +11,7 @@ spec:
   tls:
   - hosts:
     - www.dreggystore.com
-    secretName: example-tls
+    secretName: key-1
   rules:
     - host: www.dreggystore.com
       http:
