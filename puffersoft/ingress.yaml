@@ -3,10 +3,17 @@ kind: Ingress
 metadata:
   name: ingress-1
   namespace: frontend
+  annotations:
+    cert-manager.io/issuer: "letsencrypt-staging"
 spec:
   ingressClassName: traefik
+  tls:
+  - hosts:
+    - 18.222.189.251
+    secretName: mysecret
   rules:
-    - http:
+    - host: 18.222.189.251
+      http:
         paths:
           - path: /
             pathType: Prefix
