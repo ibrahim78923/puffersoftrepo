@@ -3,7 +3,6 @@ kind: Ingress
 metadata:
   name: ingress-1
   namespace: frontend
-  annotations:
 spec:
   ingressClassName: nginx
   rules:
