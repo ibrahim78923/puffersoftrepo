@@ -1,4 +1,4 @@
-yapiVersion: networking.k8s.io/v1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ingress-1
@@ -12,7 +12,8 @@ spec:
     - dreggystore.com
     secretName: mysecret
   rules:
-    - http:
+    - host: www.dreggystore.com
+      http:
         paths:
           - path: /
             pathType: Prefix
