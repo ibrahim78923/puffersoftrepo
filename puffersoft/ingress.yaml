@@ -3,14 +3,8 @@ kind: Ingress
 metadata:
   name: ingress-1
   namespace: frontend
-  annotations:
-    cert-manager.io/cluster-issuer: "letsencrypt-staging"
 spec:
   ingressClassName: traefik
-  tls:
-  - hosts:
-    - www.dreggystore.com
-    secretName: mysecret
   rules:
     - host: www.dreggystore.com
       http:
