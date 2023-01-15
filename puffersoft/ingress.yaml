@@ -9,7 +9,7 @@ spec:
   ingressClassName: traefik
   tls:
   - hosts:
-    - dreggystore.com
+    - www.dreggystore.com
     secretName: mysecret
   rules:
     - host: www.dreggystore.com
