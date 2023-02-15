@@ -72,4 +72,4 @@ spec:
           service:
             name: web-svc
             port:
-              number: 8080
+              number: 80
