@@ -10,10 +10,10 @@ spec:
   rules:
   - http:
       paths:
-      - path: /graph
+      - path: /prom
         pathType: Prefix
         backend:
           service:
-            name: prom-prometheus-server
+            name: prometheus-server
             port:
               number: 80
