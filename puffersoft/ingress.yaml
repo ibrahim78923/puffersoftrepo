@@ -15,14 +15,6 @@ spec:
                 name:  websvc
                 port:
                   number: 80
-    - http:
-        paths:
-          - path: /prom
-            pathType: Prefix
-            backend:
-              service:
-                name: prom-prometheus-server
-                port:
-                  number: 80
+
                   
 
