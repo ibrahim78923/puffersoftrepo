@@ -3,14 +3,12 @@ kind: Ingress
 metadata:
   name: ingress-1
   namespace: prom
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
   rules:
   - http:
       paths:
-      - path: /graph
+      - path: /prom
         pathType: Prefix
         backend:
           service:
