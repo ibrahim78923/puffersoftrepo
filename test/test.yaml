@@ -62,7 +62,7 @@ metadata:
   name: ingress-1
   namespace: test
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
   ingressClassName: nginx
   rules:
