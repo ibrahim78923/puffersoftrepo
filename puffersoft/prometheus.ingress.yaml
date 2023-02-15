@@ -10,7 +10,7 @@ spec:
   rules:
   - http:
       paths:
-      - path: /chart
+      - path: /prometheus
         pathType: Prefix
         backend:
           service:
