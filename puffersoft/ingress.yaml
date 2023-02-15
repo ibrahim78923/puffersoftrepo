@@ -11,7 +11,7 @@ spec:
   - host: awssolutionsprovider.com
     http:
       paths:
-      - path: /
+      - path: /puffersoft
         pathType: Prefix
         backend:
           service:
