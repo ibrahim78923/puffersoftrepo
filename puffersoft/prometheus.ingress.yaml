@@ -10,7 +10,7 @@ spec:
   rules:
   - http:
       paths:
-      - path: /prom
+      - path: /graph
         pathType: Prefix
         backend:
           service:
