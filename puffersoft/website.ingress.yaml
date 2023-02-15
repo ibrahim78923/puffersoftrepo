@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: awssolutionsprovider.com
+  - host: www.awssolutionsprovider.com
     http:
       paths:
       - path: /puffersoft
