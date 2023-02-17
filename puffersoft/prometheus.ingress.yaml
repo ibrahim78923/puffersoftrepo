@@ -3,6 +3,8 @@ kind: Ingress
 metadata:
   name: ingress-1
   namespace: prom
+  annotations:
+    traefik.ingress.kubernetes.io/router.entrypoints: web
 spec:
   ingressClassName: controller-traefik
   rules:
