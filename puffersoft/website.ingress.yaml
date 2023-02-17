@@ -3,8 +3,10 @@ kind: Ingress
 metadata:
   name: ingress-1
   namespace: frontend
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
-  ingressClassName: controller-traefik
+  ingressClassName: nginx
   rules:
    - http:
         paths:
