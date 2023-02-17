@@ -9,7 +9,7 @@ spec:
     - host: *
       http:
         paths:
-          - path: /puffersoft
+          - path: /
             pathType: Prefix
             backend:
               service:
